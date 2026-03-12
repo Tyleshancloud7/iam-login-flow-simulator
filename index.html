@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IAM Login Flow Simulator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>IAM / Okta Login Flow Simulator</h1>
+    <p class="subtitle">Simulating secure login with MFA and session handling</p>
+
+    <div class="card">
+      <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password" required />
+
+        <button type="submit">Login</button>
+      </form>
+
+      <div id="mfaSection" class="hidden">
+        <h2>MFA Verification</h2>
+        <p>Enter the 6-digit MFA code</p>
+        <input type="text" id="mfaCode" placeholder="123456" maxlength="6" />
+        <button id="verifyMfaBtn">Verify MFA</button>
+      </div>
+
+      <div id="dashboard" class="hidden">
+        <h2>Access Granted</h2>
+        <p id="welcomeMessage"></p>
+        <p id="roleMessage"></p>
+        <button id="logoutBtn">Logout</button>
+      </div>
+
+      <div id="result" class="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

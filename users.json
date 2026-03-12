@@ -1,0 +1,14 @@
+[
+  {
+    "username": "admin",
+    "password": "Password123!",
+    "mfaCode": "123456",
+    "role": "Admin"
+  },
+  {
+    "username": "analyst",
+    "password": "SecurePass456!",
+    "mfaCode": "654321",
+    "role": "Security Analyst"
+  }
+]
